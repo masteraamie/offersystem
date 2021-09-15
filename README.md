@@ -10,15 +10,19 @@ Alternative installation is possible without local dependencies relying on [Dock
 
 Clone the repository
 
-    git clone git@github.com:gothinkster/laravel-realworld-example-app.git
+    git clone git@github.com:masteraamie/offersystem.git
 
 Switch to the repo folder
 
-    cd laravel-realworld-example-app
+    cd offersystem
 
-Install all the dependencies using composer
+Install all the dependencies using composer and npm
 
     composer install
+
+    npm install
+
+    npm run dev
 
 Copy the example env file and make the required configuration changes in the .env file
 
@@ -28,13 +32,11 @@ Generate a new application key
 
     php artisan key:generate
 
-Generate a new JWT authentication secret key
-
-    php artisan jwt:generate
-
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
+
+    php artisan db:seed --class UserSeeder
 
 Start the local development server
 
