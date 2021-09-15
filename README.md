@@ -1,4 +1,4 @@
-# ![Laravel Offer System App]
+# Laravel Offer System App
 
 # Getting started
 
